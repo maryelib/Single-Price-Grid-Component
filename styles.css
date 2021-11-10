@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 20rem;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 5px hsl(218deg 1% 83%);
+  width: 750px;
+}
+/*Top half*/
+.card-top {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+.top-content {
+  line-height: 1.5;
+  margin: 2rem 3rem;
+  width: 75%;
+}
+.title {
+  color: hsl(179, 62%, 43%);
+}
+.sub-title {
+  color: hsl(71, 73%, 54%);
+}
+.top-text {
+  color: hsl(218, 22%, 67%);
+}
+/*Bottom half*/
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.card-left {
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  line-height: 1.5;
+  width: 375px;
+  border-radius: 0 0 0 10px;
+}
+.left-content {
+  margin: 3rem;
+}
+.price {
+  font-size: xx-large;
+  font-weight: 700;
+  color: white;
+  margin: 0 1rem 0 0;
+}
+.sign-up {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-size: medium;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 10px 40px 0 hsl(174deg 20% 50%);
+  width: 250px;
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.card-right {
+  background-color: hsl(179deg 62% 43% / 85%);
+  color: hsl(204, 43%, 93%);
+  line-height: 1.5;
+  width: 375px;
+  border-radius: 0 0 10px 0;
+}
+.right-content {
+  margin: 3rem;
+}
+/*For our mobile friends*/
+@media only screen and (max-width: 700px) {
+  .card {
+    width: auto;
+  }
+  .card-bottom {
+    flex-direction: column;
+  }
+  .card-top {
+    width: 375px;
+  }
+  .card-left {
+    border-radius: 0;
+  }
+  .card-right {
+    border-radius: 0 0 10px 10px;
+  }
+}
+/*Thank you Frontend Mentor*/
+.attribution {
+  color: hsl(179, 62%, 43%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(179, 62%, 43%);
+  text-decoration: none;
+}
