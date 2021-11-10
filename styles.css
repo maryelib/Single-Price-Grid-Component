@@ -99,7 +99,7 @@ body {
 .attribution {
   color: hsl(179, 62%, 43%);
   font-size: 11px;
-  text-align: center;
+  width: max-content;
 }
 .attribution a {
   color: hsl(179, 62%, 43%);
